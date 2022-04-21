@@ -1,0 +1,123 @@
+HTML:
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ADVERTISING</title>
+	<link rel="stylesheet" type="text/css" href="add.css">
+</head>
+<body>
+	<div class="f1">
+	<h1>ROGU</h1>
+	</div>
+	<div class="menu">
+		<ul>
+			<li><a href="#">ADVERTISER </a></li>
+			<li><a href="#">PUBLISHER </a></li>
+			<li><a href="#">CASE STUDIES</a></li>
+			<li><a href="#">INSIGHTS</a></li>
+			<li><a href="#">ABOUT</a></li>
+		</ul>
+	</div>
+		<div class="final">
+			<input type="contact us" name="contact us" value="contact us">
+		</div>
+		<br>
+		<div class="k1">
+		<h1>ALL TV ADVERTISING WILL BE</h1>
+		<h1>STREAMED.</h1>
+		<h2>Rogu Advertising delivers relevant audiences and measurable results.</h2>
+		<br>
+	</div>
+		<div class="image">
+			<img src="image/tv.jpg">
+			<img src="image/rogu.jpg">
+
+			<img src="image/rogu1.jpg">
+			<img src="image/add.jpg">
+			
+		</div>
+
+
+
+</body>
+</html>
+
+CSS FILE:
+
+body{
+	background-image: url('image/com.jpg');
+	background-repeat: no-repeat;
+}
+ .f1 h1{
+	color: orange;
+	font-style: italic;
+	font-size: 50px;
+}
+
+.menu li{
+
+	display: inline;
+	word-spacing: 15px;
+	padding-left: 50%;
+
+
+}
+.menu ul{
+	padding-left: 50%;
+	font-size: 15px;
+	font-style: italic;
+
+	
+
+
+}
+.menu{
+	border:1px solid;
+	text-align: center;
+	background-color: black;
+	color: white;
+	border-width: 20px;
+	border-radius: 20px;
+	border-padding-left:50px solid;
+
+}
+.final input[type="contact us"]
+{
+	background-color: black;
+	color: white;
+	padding: 10px;
+	border:none;
+	text-transform: uppercase;
+	font-style: italic;
+	font-size: 30px;
+	border-radius: 30%;
+	text-align: center;
+	font:bold;
+
+}
+.k1 h1{
+	color: white;
+	text-align: center;
+	font-style: italic;
+	font-size: 40px;
+}
+.final {
+	padding-left: 75%;
+}
+h2{
+	text-align: center;
+	font-style: italic;
+	font-size: bold;
+
+}
+.image img{
+text-align: center;
+	float: left;
+	
+	padding-left: 70px;
+}
+.image{
+	padding-left: 20px;
+}
