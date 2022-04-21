@@ -1,0 +1,110 @@
+HTML:
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FOOD</title>
+	<link rel="stylesheet" type="text/css" href="vlog.css">
+</head>
+<body>
+<div class="list">
+	<ol>
+		<li><a href="https://www.delish.com/cooking/menus/">MENU</a></li>
+		<li><a href="https://blog.peepalfarm.org/">LUNCH </a></li>
+		<li><a href="https://www.indianhealthyrecipes.com/">SPECIALS</a></li>
+		<li><a href="#">CONTACT</a></li>
+	</ol>
+</div>
+<div class="c2">
+<h1><b>Simply</b> Recipes</h1>
+</div>
+<div class="point">
+	<h1>.......FRESHNESS </h1>
+	<h1>IN EVERY BITE.......</h1>
+</div>
+<div class="img">
+<img src="image/l.jpg">
+<img src="image/k.jpg">
+<img src="image/i.jpg">
+<img src="image/m.jpg">
+</div>
+<div class="c1">
+	<h3>Are You Hungry?</h3>
+	<h3>Don't Wait!</h3>
+	<h3>Let Start To Order Food Now...</h3>
+</div>
+
+<div class="final">
+	<ul>
+		<li><a href=https://www.delish.com/cooking/menus/">check out menu</a></li>
+	</ul>
+</div>
+</body>
+</html>
+
+CSS FILE:
+
+body{
+	background-image: url('image/mob.jpg');
+	background-repeat: no-repeat;
+}
+.list li{
+	display: inline;
+	font-style: italic;
+	font-size: 25px;
+
+
+}
+.list ol{
+
+	word-spacing: 20px;
+	padding-left: 50%;
+
+	
+}
+.point h3{
+	color: white;
+	font-style: italic;
+	font-size: 25px;
+}
+.point h1{
+	font-style: italic;
+	font-size: 40px;
+	padding-left: 30%;
+}
+.c1 h3{
+	color: white;
+	font-size: 15px;
+}
+.c2 h1{
+	color:yellow;
+	font-style: italic;
+	font-size: 40px;
+}
+.img {
+	padding: 1%;
+	padding-left: 5%;
+
+}
+.final li{
+	display: inline;
+	font-style: italic;
+	font-size: 45px;
+	color: white;
+	border:white 5px solid;
+	color: white;
+	border-radius: 30%;
+	background-color: white;
+
+}
+.final ul{
+padding-bottom: 70%;
+	padding-left: 30%;
+	font-style: italic;
+	font-size: 30px;
+	color: white;
+}
+.final{
+	padding-bottom: 10%;
+}
