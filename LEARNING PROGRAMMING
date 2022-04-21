@@ -1,0 +1,135 @@
+HTML:
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learning skills</title>
+	<link rel="stylesheet" type="text/css" href="hard.css">
+</head>
+<body>
+	<div class="learn">
+		<marquee>
+<h1>are you ready to learning</h1>
+</marquee>
+<h2>life is learning</h2>
+</div>
+<br>
+<div class="link">
+<ul>
+<li><a href="https://www.tutorialspoint.com/html/index.htm">HTML</a></li>	
+<li><a href="https://www.tutorialspoint.com/css/index.htm">CSS</a></li>	
+<li><a href="https://www.tutorialspoint.com/javascript/index.htm">JS</a></li>	
+</ul>
+</div>
+<br>
+<div class="markup">
+<h3>HTML is the hypertext markup language is for design purpose</h3>
+<br>
+</div>
+<div class="point">
+<ul>
+	<li><a href="https://www.informit.com/articles/article.aspx?p=24021">click here</a></li>
+</ul>
+	</div>
+	<div class="style">
+<h3>CSS is cascade style sheets used also designing purpose</h3>
+	</div>
+	<div class="mark">
+		<ul>
+	<li><a href="https://www.informit.com/articles/article.aspx?p=24102&seqNum=3">click here</a></li>
+</ul>
+</div>
+
+</body>
+</html>
+
+CSS FILE:
+
+
+body{
+	background-image: url('image/com.jpg');
+	background-repeat: no-repeat;
+}
+.learn{
+	padding-top: 55px;
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	display: inline;
+}
+h1{
+	color: yellow;
+	font-style: italic;
+	font-size: 50px;
+}
+h2{
+	font-size: 25px;
+	color: blue;
+}
+.link ul{
+	display: inline;
+	word-spacing: 35px;
+ 
+
+
+}
+.link li{
+	display: inline;
+	border:4px solid;
+	font-size: 35px;
+	font-style: italic;
+	background-color: pink;
+	border-radius: 10px;
+	border-color: black;
+}
+.link{
+	text-align: center;
+	padding-top: 50px;
+
+}
+.markup h3{
+	color: orange;
+	font-size: 25px;
+
+}
+.markup{
+	text-align: center;
+}
+ 
+
+.point {
+	text-align: center;
+}
+.point li{
+	display: inline;
+	border:4px solid;
+	font-size: 45px;
+	font-style: italic;
+	background-color: red;
+	border-radius: 10px;
+	border-color: black;
+}
+.style h3{
+	color: orange;
+	font-size: 25px;
+
+}
+.style{
+	text-align: center;
+}
+ 
+
+.mark{
+	text-align: center;
+}
+.mark li{
+	display: inline;
+	border:4px solid;
+	font-size: 45px;
+	font-style: italic;
+	background-color: red;
+	border-radius: 10px;
+	border-color: black;
+}
+
