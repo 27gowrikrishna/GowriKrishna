@@ -1,0 +1,156 @@
+HTML:
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Draggable app</title>
+	<link rel="stylesheet" type="text/css" href="kg.css">
+</head>
+<body>
+	<div class="container">
+		<div class="status">
+			<h1>No status</h1>
+			<button id="add_btn">+ Add Todo</button>
+			<div class="todo">
+				Buy a pizza
+				<span class="close">&times;</span>
+		</div>
+	</div>
+		<div class="status">
+			<h1>Not started</h1>
+		</div>
+
+		<div class="status">
+			<h1>In progress</h1>
+		</div>
+		<div class="status">
+			<h1>Completed</h1>
+		</div>
+	</div>
+		<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+CSS:
+
+*{
+	box-sizing: border-box;
+}
+body{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container{
+	width: 1000px;
+	height: 30vh;
+	display: flex;
+}
+.status{
+	width: 25%;
+	background-color: #f3f3f3;
+	position: relative;
+}
+.status h1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #343434;
+	color: #f3f3f3;
+	margin: 0;
+	width: 100%;
+	padding: 0.5rem 1rem;
+
+
+}
+#add_btn{
+	padding: 0.5rem 1rem;
+	background-color: #ccc;
+	outline: none;
+	border:none;
+	width: 100%;
+	font-size: 1.5rem;
+	margin: 0.5rem 0;
+	border-radius: 4px;
+	cursor: pointer;
+}
+#add_btn:hover{
+	background-color: #aaa;
+}
+.todo{
+	position: relative;
+	background-color: #fff;
+	box-shadow: rgba(15,15,15,0.1)0px 0px 0px 1px,
+                rgba(15,15,15,0.1)0px 2px 4px;
+                border-radius4px;
+                padding:0.5rem 1rem;
+                font-size:1.5rem;
+                margin: 0.5rem 0;
+            }
+
+.todo .close{
+	position: absolute;
+	right: 1rem;
+	top: 0;
+	font-size: 2rem;
+}            
+
+
+JAVASCRIPT:
+
+const todos=document.querySelectorAll(".todo");
+const all_status=document.querySelectorAll(".status");
+let draggableTodo=null;
+
+
+
+todos.forEach((todo) =>{
+	todo.addEventListener("dragstart",dragStart);
+
+});
+
+function dragStart(){
+	draggableTodo=this;
+	console.log("dragStart");
+
+}
+function dragStart(){
+	draggableTodo=null;
+	console.log("dragEnd");
+	
+}
+
+all_status.forEach((status)=>{
+	status.addEventListener("dragover",dragOver);
+	status.addEventListener("dragenter",dragEnter);
+	status.addEventListener("dragLeave",dragLeave);
+	status.addEventListener("drop",dragDrop);
+
+
+});
+
+function dragOver(e){
+	e.preventDefault();
+	//console.log("dragOver");
+	
+}
+function dragEnter(){
+	console.log("dragEnter");
+	
+}
+function dragLeave(){
+	console.log("dragLeave");
+	
+}
+function dradDrop(){
+	this.appendchild(draggableTodo);
+	console.log("dropped");
+	}
+
+
+
+
